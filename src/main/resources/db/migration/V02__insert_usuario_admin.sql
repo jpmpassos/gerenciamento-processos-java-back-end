@@ -1,0 +1,1 @@
+INSERT INTO usuario("nome", "admin", "triador", "finalizador", "login", "senha") VALUES ('Administrador', TRUE, TRUE, TRUE, 'admin', 'jGl25bVBBBW96Qi9Te4V37Fnqchz/Eu4qB9vKrRIqRg=');

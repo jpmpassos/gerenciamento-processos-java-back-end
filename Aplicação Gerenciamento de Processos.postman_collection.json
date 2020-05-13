@@ -1,0 +1,632 @@
+{
+	"id": "c883ecd2-a3b3-528a-cac5-e5ba61e1d0da",
+	"name": "Gerenciamento de Processos",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"name": "Parecer",
+			"description": "",
+			"collectionId": "c883ecd2-a3b3-528a-cac5-e5ba61e1d0da",
+			"order": [
+				"1e4db3ca-9eb8-07be-2d59-9dda29c4695e",
+				"0e107bf2-d376-f54f-9d50-bd5b20e66307",
+				"f9f085c5-133e-72ab-db40-1f5dbeb544e2",
+				"2f63fc92-4416-af3a-bada-c51a9c649cd8",
+				"75ce5f5e-6fc2-3d85-895f-e41ca3fdfe55",
+				"f81a7a13-e234-ec62-2ea7-f9e6c63ec430"
+			],
+			"owner": "1971589",
+			"folders_order": [],
+			"id": "eaf29aef-4300-beba-1278-f71f87798d9a"
+		},
+		{
+			"name": "Processo",
+			"description": "",
+			"collectionId": "c883ecd2-a3b3-528a-cac5-e5ba61e1d0da",
+			"order": [
+				"6b34bd81-c29a-75a3-de57-7934829923a0",
+				"252c269c-f117-1ff7-24c3-bbdd1c118b38",
+				"bb9e4d0b-cd10-4738-8165-e32ab489e4d1",
+				"211d1a8d-4e34-f3b4-4765-2faf91d095a4",
+				"ce39a44f-f1e3-724d-146c-1d17f2203952"
+			],
+			"owner": "1971589",
+			"folders_order": [],
+			"id": "27a7df82-7c0f-4750-7ea6-cf01ff333e50"
+		},
+		{
+			"name": "Usuario",
+			"description": "",
+			"collectionId": "c883ecd2-a3b3-528a-cac5-e5ba61e1d0da",
+			"order": [
+				"344e39c1-3fe8-055e-7e43-a8374d068145",
+				"f15d2d29-4ded-5aeb-357b-f0e8c75003e6",
+				"9fe1aef8-ae1e-c497-cdb6-ad3b2780486a",
+				"fcf21b16-19a6-0567-32bc-8b7d6ab8364a",
+				"09a47092-089c-e029-78ad-b32593c1ec66",
+				"fa6e0f27-f19b-2158-4cc1-9ae5951e9c1e"
+			],
+			"owner": "1971589",
+			"folders_order": [],
+			"id": "fdb82fa2-e8ac-0c9c-00d3-5c0b4f4c6022"
+		}
+	],
+	"folders_order": [
+		"fdb82fa2-e8ac-0c9c-00d3-5c0b4f4c6022",
+		"27a7df82-7c0f-4750-7ea6-cf01ff333e50",
+		"eaf29aef-4300-beba-1278-f71f87798d9a"
+	],
+	"timestamp": 1565480003854,
+	"owner": "1971589",
+	"public": false,
+	"requests": [
+		{
+			"id": "09a47092-089c-e029-78ad-b32593c1ec66",
+			"headers": "//Content-Type: application/json\nAuthorization: Basic YWRtaW5hOmFkbWlu\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Basic YWRtaW5hOmFkbWlu",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/usuario/autenticacao?login=admin&senha=admin",
+			"folder": "fdb82fa2-e8ac-0c9c-00d3-5c0b4f4c6022",
+			"queryParams": [
+				{
+					"key": "login",
+					"value": "admin",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "senha",
+					"value": "admin",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1565917826790,
+			"name": "GET autenticacao",
+			"description": "",
+			"collectionId": "c883ecd2-a3b3-528a-cac5-e5ba61e1d0da",
+			"responses": [],
+			"rawModeData": "{\n\t\"usuarioId\":3,\n\t\"nome\":\"Usuário 23\",\n\t\"login\":\"usuario3\",\n\t\"senha\":\"123\",\n\t\"admin\":\"false\",\n\t\"triador\":\"true\",\n\t\"finalizador\":\"true\"\n}"
+		},
+		{
+			"id": "0e107bf2-d376-f54f-9d50-bd5b20e66307",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/parecer/3",
+			"folder": "eaf29aef-4300-beba-1278-f71f87798d9a",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1565548112390,
+			"name": "PUT",
+			"description": "",
+			"collectionId": "c883ecd2-a3b3-528a-cac5-e5ba61e1d0da",
+			"responses": [],
+			"rawModeData": "{\n\t\"usuarioId\":3,\n\t\"nome\":\"Usuário 23\",\n\t\"login\":\"usuario3\",\n\t\"senha\":\"123\",\n\t\"admin\":\"false\",\n\t\"triador\":\"true\",\n\t\"finalizador\":\"true\"\n}"
+		},
+		{
+			"id": "1e4db3ca-9eb8-07be-2d59-9dda29c4695e",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/parecer",
+			"folder": "eaf29aef-4300-beba-1278-f71f87798d9a",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1565917834881,
+			"name": "POST",
+			"description": "",
+			"collectionId": "c883ecd2-a3b3-528a-cac5-e5ba61e1d0da",
+			"responses": [],
+			"rawModeData": "{\n\t\"descricao\":\"Parecer teste\",\n\t\"status\":\"PENDENTE\",\n\t\"usuario\": {\n\t    \"usuarioId\": 1,\n\t    \"nome\": \"Usuário 1\",\n\t    \"admin\": false,\n\t    \"triador\": true,\n\t    \"finalizador\": true,\n\t    \"login\": \"usuario1\",\n\t    \"senha\": \"pmWkWSBCL51Bfkhn79xPuKBKHz//H6B+mY6G9/eieuM=\"\n\t},\n\t\"processo\":{\n        \"processoId\": 2,\n        \"titulo\": \"Processo 1\",\n        \"descricao\": \"Descrição do Processo 1\"\n    }\n}"
+		},
+		{
+			"id": "211d1a8d-4e34-f3b4-4765-2faf91d095a4",
+			"headers": "//Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "localhost:8080/processo",
+			"folder": "27a7df82-7c0f-4750-7ea6-cf01ff333e50",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1565548428383,
+			"name": "GET",
+			"description": "",
+			"collectionId": "c883ecd2-a3b3-528a-cac5-e5ba61e1d0da",
+			"responses": [],
+			"rawModeData": "{\n\t\"usuarioId\":3,\n\t\"nome\":\"Usuário 23\",\n\t\"login\":\"usuario3\",\n\t\"senha\":\"123\",\n\t\"admin\":\"false\",\n\t\"triador\":\"true\",\n\t\"finalizador\":\"true\"\n}"
+		},
+		{
+			"id": "252c269c-f117-1ff7-24c3-bbdd1c118b38",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/processo/1",
+			"folder": "27a7df82-7c0f-4750-7ea6-cf01ff333e50",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1565548390230,
+			"name": "PUT",
+			"description": "",
+			"collectionId": "c883ecd2-a3b3-528a-cac5-e5ba61e1d0da",
+			"responses": [],
+			"rawModeData": "{\n    \"processoId\": 1,\n    \"titulo\": \"Processo 1\",\n    \"descricao\": \"Descrição do Processo 1\"\n}"
+		},
+		{
+			"id": "2f63fc92-4416-af3a-bada-c51a9c649cd8",
+			"headers": "//Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "localhost:8080/parecer",
+			"folder": "eaf29aef-4300-beba-1278-f71f87798d9a",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1565548146664,
+			"name": "GET",
+			"description": "",
+			"collectionId": "c883ecd2-a3b3-528a-cac5-e5ba61e1d0da",
+			"responses": [],
+			"rawModeData": "{\n\t\"usuarioId\":3,\n\t\"nome\":\"Usuário 23\",\n\t\"login\":\"usuario3\",\n\t\"senha\":\"123\",\n\t\"admin\":\"false\",\n\t\"triador\":\"true\",\n\t\"finalizador\":\"true\"\n}"
+		},
+		{
+			"id": "344e39c1-3fe8-055e-7e43-a8374d068145",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/usuario",
+			"folder": "fdb82fa2-e8ac-0c9c-00d3-5c0b4f4c6022",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1565557605976,
+			"name": "POST",
+			"description": "",
+			"collectionId": "c883ecd2-a3b3-528a-cac5-e5ba61e1d0da",
+			"responses": [],
+			"rawModeData": "{\n\t\"nome\":\"Usuário 1\",\n\t\"login\":\"usuario1\",\n\t\"senha\":\"123\",\n\t\"admin\":\"false\",\n\t\"triador\":\"true\",\n\t\"finalizador\":\"true\"\n}"
+		},
+		{
+			"id": "6b34bd81-c29a-75a3-de57-7934829923a0",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/processo",
+			"folder": "27a7df82-7c0f-4750-7ea6-cf01ff333e50",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1565917806297,
+			"name": "POST",
+			"description": "",
+			"collectionId": "c883ecd2-a3b3-528a-cac5-e5ba61e1d0da",
+			"responses": [],
+			"rawModeData": "{\n\t\"titulo\":\"Processo 2\",\n\t\"descricao\":\"Descrição do Processo 2\"\n}"
+		},
+		{
+			"id": "75ce5f5e-6fc2-3d85-895f-e41ca3fdfe55",
+			"headers": "//Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "localhost:8080/parecer/porprocesso?processoId=1",
+			"folder": "eaf29aef-4300-beba-1278-f71f87798d9a",
+			"queryParams": [
+				{
+					"key": "processoId",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1565889874484,
+			"name": "GET por processo",
+			"description": "",
+			"collectionId": "c883ecd2-a3b3-528a-cac5-e5ba61e1d0da",
+			"responses": [],
+			"rawModeData": "{\n\t\"usuarioId\":3,\n\t\"nome\":\"Usuário 23\",\n\t\"login\":\"usuario3\",\n\t\"senha\":\"123\",\n\t\"admin\":\"false\",\n\t\"triador\":\"true\",\n\t\"finalizador\":\"true\"\n}"
+		},
+		{
+			"id": "9fe1aef8-ae1e-c497-cdb6-ad3b2780486a",
+			"headers": "//Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "localhost:8080/usuario/3",
+			"folder": "fdb82fa2-e8ac-0c9c-00d3-5c0b4f4c6022",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1565483090915,
+			"name": "GET {código}",
+			"description": "",
+			"collectionId": "c883ecd2-a3b3-528a-cac5-e5ba61e1d0da",
+			"responses": [],
+			"rawModeData": "{\n\t\"usuarioId\":3,\n\t\"nome\":\"Usuário 23\",\n\t\"login\":\"usuario3\",\n\t\"senha\":\"123\",\n\t\"admin\":\"false\",\n\t\"triador\":\"true\",\n\t\"finalizador\":\"true\"\n}"
+		},
+		{
+			"id": "bb9e4d0b-cd10-4738-8165-e32ab489e4d1",
+			"headers": "//Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "localhost:8080/processo/2",
+			"folder": "27a7df82-7c0f-4750-7ea6-cf01ff333e50",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1565548448081,
+			"name": "GET {código}",
+			"description": "",
+			"collectionId": "c883ecd2-a3b3-528a-cac5-e5ba61e1d0da",
+			"responses": [],
+			"rawModeData": "{\n\t\"usuarioId\":3,\n\t\"nome\":\"Usuário 23\",\n\t\"login\":\"usuario3\",\n\t\"senha\":\"123\",\n\t\"admin\":\"false\",\n\t\"triador\":\"true\",\n\t\"finalizador\":\"true\"\n}"
+		},
+		{
+			"id": "ce39a44f-f1e3-724d-146c-1d17f2203952",
+			"headers": "//Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "localhost:8080/processo/pendenteaprovacao?usuarioId=2",
+			"folder": "27a7df82-7c0f-4750-7ea6-cf01ff333e50",
+			"queryParams": [
+				{
+					"key": "usuarioId",
+					"value": "2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1565554196429,
+			"name": "GET pendente aprovação",
+			"description": "",
+			"collectionId": "c883ecd2-a3b3-528a-cac5-e5ba61e1d0da",
+			"responses": [],
+			"rawModeData": "{\n\t\"usuarioId\":3,\n\t\"nome\":\"Usuário 23\",\n\t\"login\":\"usuario3\",\n\t\"senha\":\"123\",\n\t\"admin\":\"false\",\n\t\"triador\":\"true\",\n\t\"finalizador\":\"true\"\n}"
+		},
+		{
+			"id": "f15d2d29-4ded-5aeb-357b-f0e8c75003e6",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/usuario/3",
+			"folder": "fdb82fa2-e8ac-0c9c-00d3-5c0b4f4c6022",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1565548119619,
+			"name": "PUT",
+			"description": "",
+			"collectionId": "c883ecd2-a3b3-528a-cac5-e5ba61e1d0da",
+			"responses": [],
+			"rawModeData": "{\n\t\"usuarioId\":3,\n\t\"nome\":\"Usuário 23\",\n\t\"login\":\"usuario3\",\n\t\"senha\":\"admin\",\n\t\"admin\":\"false\",\n\t\"triador\":\"true\",\n\t\"finalizador\":\"true\"\n}"
+		},
+		{
+			"id": "f81a7a13-e234-ec62-2ea7-f9e6c63ec430",
+			"headers": "//Content-Type: application/json\nAuthorization: Basic YWRtaW46YWRtaW4=\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Basic YWRtaW46YWRtaW4=",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/parecer/pendenteporusuario?usuarioId=3",
+			"folder": "eaf29aef-4300-beba-1278-f71f87798d9a",
+			"queryParams": [
+				{
+					"key": "usuarioId",
+					"value": "3",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1565917821950,
+			"name": "GET por processo copy",
+			"description": "",
+			"collectionId": "c883ecd2-a3b3-528a-cac5-e5ba61e1d0da",
+			"responses": [],
+			"rawModeData": "{\n\t\"usuarioId\":3,\n\t\"nome\":\"Usuário 23\",\n\t\"login\":\"usuario3\",\n\t\"senha\":\"123\",\n\t\"admin\":\"false\",\n\t\"triador\":\"true\",\n\t\"finalizador\":\"true\"\n}"
+		},
+		{
+			"id": "f9f085c5-133e-72ab-db40-1f5dbeb544e2",
+			"headers": "//Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "localhost:8080/parecer/1",
+			"folder": "eaf29aef-4300-beba-1278-f71f87798d9a",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1565557377315,
+			"name": "GET {código}",
+			"description": "",
+			"collectionId": "c883ecd2-a3b3-528a-cac5-e5ba61e1d0da",
+			"responses": [],
+			"rawModeData": "{\n\t\"usuarioId\":3,\n\t\"nome\":\"Usuário 23\",\n\t\"login\":\"usuario3\",\n\t\"senha\":\"123\",\n\t\"admin\":\"false\",\n\t\"triador\":\"true\",\n\t\"finalizador\":\"true\"\n}"
+		},
+		{
+			"id": "fa6e0f27-f19b-2158-4cc1-9ae5951e9c1e",
+			"headers": "//Content-Type: application/json\nAuthorization: Basic YWRtaW46YWRtaW4=\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Basic YWRtaW46YWRtaW4=",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/usuario/finalizador",
+			"folder": "fdb82fa2-e8ac-0c9c-00d3-5c0b4f4c6022",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1565917829243,
+			"name": "GET finalizador",
+			"description": "",
+			"collectionId": "c883ecd2-a3b3-528a-cac5-e5ba61e1d0da",
+			"responses": [],
+			"rawModeData": "{\n\t\"usuarioId\":3,\n\t\"nome\":\"Usuário 23\",\n\t\"login\":\"usuario3\",\n\t\"senha\":\"123\",\n\t\"admin\":\"false\",\n\t\"triador\":\"true\",\n\t\"finalizador\":\"true\"\n}"
+		},
+		{
+			"id": "fcf21b16-19a6-0567-32bc-8b7d6ab8364a",
+			"headers": "//Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "localhost:8080/usuario",
+			"folder": "fdb82fa2-e8ac-0c9c-00d3-5c0b4f4c6022",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1565483171675,
+			"name": "GET",
+			"description": "",
+			"collectionId": "c883ecd2-a3b3-528a-cac5-e5ba61e1d0da",
+			"responses": [],
+			"rawModeData": "{\n\t\"usuarioId\":3,\n\t\"nome\":\"Usuário 23\",\n\t\"login\":\"usuario3\",\n\t\"senha\":\"123\",\n\t\"admin\":\"false\",\n\t\"triador\":\"true\",\n\t\"finalizador\":\"true\"\n}"
+		}
+	]
+}
